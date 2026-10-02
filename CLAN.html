@@ -69,6 +69,48 @@
                 font-size: 1.2rem;
                 color: #fff;
             }
+            .mega-dropdown {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                background-color: #222;
+                border-bottom: 0px solid #ff0dff;
+                transition: height 0.3s ease, border-bottom 0.1s ease;
+            }
+            header .container:hover .mega-dropdown {
+                height: 130px;
+                border-bottom: 2px solid #01f7fa;
+            }
+            .mega-content {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                padding-top: 6px;
+            }
+            .sub-menu-group {
+                display: flex;
+                flex-direction: column;
+                width: 160px;
+                text-align: center;
+                margin-right: 60px;
+            }
+            .sub-menu-group li button {
+                width: 100%;
+                padding: 6px 0;
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+            .sub-menu-group li button:hover {
+                color: #01f7fa;
+            }#CLAN {
+                color: #ff0dff;
+            }
+            #CLAN:hover {
+                color: #9a0a9a;
+            }
             main {
                 width: 100%;
                 height: 100vh;
@@ -105,8 +147,8 @@
                 display: inline;
                 margin: 0;
             }
-            button:hover {
-                color: #bbb;
+            header button:hover {
+                color: #01f7fa;
             }
         </style>
     </head>
@@ -135,6 +177,32 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="mega-dropdown">
+                    <div class="mega-content">
+                        <ul class="sub-menu-group">
+                            <li>
+                                <button onclick="location.href='CLAN.html'" id="CLAN">
+                                    CLAN
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='applogrammer.html'">
+                                    applogrammer
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='BAMTOL.html'">
+                                    BAMTOL
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='pinkpigminggi.html'">
+                                    pinkpigminggi
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
